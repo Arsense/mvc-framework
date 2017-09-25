@@ -1,4 +1,4 @@
-package mvc.helper;
+package mvc.main.function.helper;
 
 import java.lang.annotation.*;
 
@@ -15,4 +15,7 @@ import java.lang.annotation.*;
 //Documented 注解表明这个注解应该被 javadoc工具记录
 @Documented
 public @interface SuperRequestMapping {
+    String path() default "";
+
+    SuperRequestMethod method() default SuperRequestMethod.GET;
 }

@@ -1,9 +1,9 @@
 package mvc.serlvet;
 
-import mvc.helper.GetRequestUrl;
+import mvc.main.function.helper.GetRequestUrl;
 import mvc.main.function.PackageScan;
-import mvc.main.function.mapper.Handler;
 import mvc.main.function.mapper.HandlerMapping;
+import org.springframework.web.servlet.HandlerAdapter;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -23,7 +23,10 @@ public class NewDispatcherSerlvet extends HttpServlet{
 
 
     private static  final String CONTROLLER_SCAN_PACKAGES="mvc.controller";
+    private static  final String ADAPTER_SCAN_PACKAGES="mvc.main.function";
     private HandlerMapping handlerMapping;
+
+    private  List<HandlerAdapter> handlerAdapters;
     @Override
     public void init() throws ServletException {
         super.init();
@@ -32,13 +35,57 @@ public class NewDispatcherSerlvet extends HttpServlet{
         try {
             List<String> list = new PackageScan(CONTROLLER_SCAN_PACKAGES).getAllClassNamesFromPackage();
             handlerMapping = new HandlerMapping(list);
+
+
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
         }
+
+        try {
+            initHandlerApaterList(handlerAdapters);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
+
+        printAdapterList(handlerAdapters);
 
 
     }
 
+
+    public void printAdapterList(List<HandlerAdapter> handlerAdapters){
+        for(HandlerAdapter hd:handlerAdapters){
+            System.out.println(hd);
+        }
+
+    }
+
+    public void initHandlerApaterList(List<HandlerAdapter> handlerAdapters) throws IOException, ClassNotFoundException, IllegalAccessException, InstantiationException {
+
+            List<String> Classlist = new PackageScan(ADAPTER_SCAN_PACKAGES).getAllClassNamesFromPackage();
+            for (String c:Classlist){
+                Class class1 = Class.forName(c);
+                if(HandlerAdapter.class.isAssignableFrom(class1)){
+                    Object obj = class1.newInstance();
+                    handlerAdapters.add((HandlerAdapter)obj);
+                }
+
+            }
+
+
+    }
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response){
