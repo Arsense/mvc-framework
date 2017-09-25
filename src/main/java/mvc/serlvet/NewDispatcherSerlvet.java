@@ -3,6 +3,7 @@ package mvc.serlvet;
 import mvc.helper.GetRequestUrl;
 import mvc.main.function.PackageScan;
 import mvc.main.function.mapper.Handler;
+import mvc.main.function.mapper.HandlerMapping;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -17,18 +18,23 @@ import java.util.List;
 /**
  * Created by 伟 on 2017/9/21.
  */
-@WebServlet
+@WebServlet("/index")
 public class NewDispatcherSerlvet extends HttpServlet{
 
 
     private static  final String CONTROLLER_SCAN_PACKAGES="mvc.controller";
+    private HandlerMapping handlerMapping;
     @Override
     public void init() throws ServletException {
         super.init();
 
         //扫描我们的Controller文件夹
-        List<String> list = PackageScan.getAllClassNamesFromPackage(CONTROLLER_SCAN_PACKAGES);
-
+        try {
+            List<String> list = new PackageScan(CONTROLLER_SCAN_PACKAGES).getAllClassNamesFromPackage();
+            handlerMapping = new HandlerMapping(list);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }
