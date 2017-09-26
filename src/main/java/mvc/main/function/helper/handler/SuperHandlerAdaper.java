@@ -1,7 +1,8 @@
 package mvc.main.function.helper.handler;
 
-import org.springframework.web.servlet.HandlerAdapter;
-import org.springframework.web.servlet.ModelAndView;
+
+import mvc.main.function.mapper.HandlerMapping;
+import mvc.other.HandlerAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,18 +10,35 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Created by 伟 on 2017/9/25.
  */
+
 public class SuperHandlerAdaper implements HandlerAdapter {
 
+    private SuperHandler superHandler;
 
-    public boolean supports(Object o) {
+
+    public boolean support(HandlerMapping handlerMapping) {
         return false;
     }
 
-    public ModelAndView handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-        return null;
+    public boolean support(Handler handler) {
+        return false;
     }
 
-    public long getLastModified(HttpServletRequest httpServletRequest, Object o) {
-        return 0;
+    public void execute(HttpServletRequest request, HttpServletResponse response) {
+
+    }
+
+    public void setHandler(Handler handler) {
+        this.superHandler = (SuperHandler) handler;
+    }
+
+
+
+    public SuperHandler getSuperHandler() {
+        return superHandler;
+    }
+
+    public void setSuperHandler(SuperHandler superHandler) {
+        this.superHandler = superHandler;
     }
 }

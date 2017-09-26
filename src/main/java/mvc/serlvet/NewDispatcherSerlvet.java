@@ -2,8 +2,10 @@ package mvc.serlvet;
 
 import mvc.main.function.helper.GetRequestUrl;
 import mvc.main.function.PackageScan;
+import mvc.main.function.helper.handler.Handler;
 import mvc.main.function.mapper.HandlerMapping;
-import org.springframework.web.servlet.HandlerAdapter;
+import mvc.other.HandlerAdapter;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -13,6 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,9 +27,9 @@ public class NewDispatcherSerlvet extends HttpServlet{
 
     private static  final String CONTROLLER_SCAN_PACKAGES="mvc.controller";
     private static  final String ADAPTER_SCAN_PACKAGES="mvc.main.function";
-    private HandlerMapping handlerMapping;
+    private HandlerMapping handlerMapping;  //存储的Handler 和路劲的关系
 
-    private  List<HandlerAdapter> handlerAdapters;
+    private  List<HandlerAdapter> handlerAdapters = new ArrayList<HandlerAdapter>();
     @Override
     public void init() throws ServletException {
         super.init();
@@ -35,20 +38,8 @@ public class NewDispatcherSerlvet extends HttpServlet{
         try {
             List<String> list = new PackageScan(CONTROLLER_SCAN_PACKAGES).getAllClassNamesFromPackage();
             handlerMapping = new HandlerMapping(list);
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        }
-
-        try {
             initHandlerApaterList(handlerAdapters);
+
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -58,6 +49,8 @@ public class NewDispatcherSerlvet extends HttpServlet{
         } catch (InstantiationException e) {
             e.printStackTrace();
         }
+
+
 
         printAdapterList(handlerAdapters);
 
@@ -77,6 +70,8 @@ public class NewDispatcherSerlvet extends HttpServlet{
             List<String> Classlist = new PackageScan(ADAPTER_SCAN_PACKAGES).getAllClassNamesFromPackage();
             for (String c:Classlist){
                 Class class1 = Class.forName(c);
+                //这里把相同的接口实现的类放进去
+              //  Object obj1 = class1.newInstance();
                 if(HandlerAdapter.class.isAssignableFrom(class1)){
                     Object obj = class1.newInstance();
                     handlerAdapters.add((HandlerAdapter)obj);
@@ -87,10 +82,6 @@ public class NewDispatcherSerlvet extends HttpServlet{
 
     }
 
-    @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response){
-
-    }
 
     /**
      * Serlvet主要的截取功能
@@ -105,17 +96,22 @@ public class NewDispatcherSerlvet extends HttpServlet{
         String requestUrl = GetRequestUrl.getUrl(tempRequest);
 
         //然后根据路径去匹配RequestMapper
+        Handler handler = handlerMapping.getHandler(requestUrl);
+        for(HandlerAdapter adapter:handlerAdapters){
+            if(adapter != null){
+                adapter.support(handler);
+                adapter.setHandler(handler);
+                adapter.execute(tempRequest,tempResponse);
+            }else{
+                tempResponse.sendError(HttpServletResponse.SC_FOUND);
+            }
+        }
 
 
 
     }
 
 
-    @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response){
-        //获取请求路径
-        String requestUrl = GetRequestUrl.getUrl(request);
-    }
 
 }
 
