@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8876ec-3958-4b07-94d9-96a7ed5d8c54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/SuperHandler.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/helper/GetRequestUrl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/helper/SuperRequestMapping.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/helper/SuperRequestMethod.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/helper/SuperResponseBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/Controller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/mapper/Handler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/mapper/HanlderAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/SuperRequestMapping.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/SuperResponseBody.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/HandlerAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mvc/helper/GetRequestUrl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mvc/helper/SuperRequestMapping.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mvc/helper/SuperRequestMethod.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mvc/helper/SuperResponseBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mvc/main/function/Controller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mvc/main/function/mapper/Handler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mvc/main/function/mapper/HanlderAdapter.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/controller/TestController.class" afterPath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/controller/TestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/PackageScan.class" afterPath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/PackageScan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/mapper/HandlerMapping.class" afterPath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/mapper/HandlerMapping.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/serlvet/NewDispatcherSerlvet.class" afterPath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/serlvet/NewDispatcherSerlvet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc/controller/TestController.class" afterPath="$PROJECT_DIR$/target/classes/mvc/controller/TestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc/main/function/PackageScan.class" afterPath="$PROJECT_DIR$/target/classes/mvc/main/function/PackageScan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc/main/function/mapper/HandlerMapping.class" afterPath="$PROJECT_DIR$/target/classes/mvc/main/function/mapper/HandlerMapping.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc/serlvet/NewDispatcherSerlvet.class" afterPath="$PROJECT_DIR$/target/classes/mvc/serlvet/NewDispatcherSerlvet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/mapper/HanlderAdapter.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/TestController.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/TestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/PackageScan.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/PackageScan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/SuperHandlerAdaper.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/SuperHandlerAdaper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/mapper/HandlerMapping.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/mapper/HandlerMapping.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mvc/serlvet/NewDispatcherSerlvet.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/serlvet/NewDispatcherSerlvet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/mapper/Handler.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/Handler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,7 +30,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="NewDispatcherSerlvet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewDispatcherSerlvet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mvc/serlvet/NewDispatcherSerlvet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
@@ -74,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewResolver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mvc/main/function/ViewResolver.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="25">
+              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -235,6 +204,7 @@
         <option value="$PROJECT_DIR$/src/main/java/mvc/serlvet/NewDispatcherSerlvet.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc/main/function/PackageScan.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/SuperHandlerAdaper.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -317,46 +287,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SpringMvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generated-sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1065,7 +995,7 @@
       <workItem from="1506302543644" duration="2247000" />
       <workItem from="1506306153242" duration="16785000" />
       <workItem from="1506388684664" duration="9559000" />
-      <workItem from="1506409107730" duration="401000" />
+      <workItem from="1506409107730" duration="514000" />
     </task>
     <task id="LOCAL-00001" summary="update package check">
       <created>1506321749573</created>
@@ -1074,11 +1004,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506321749573</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update package check">
+      <created>1506409522439</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1506409522439</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50270000" />
+    <option name="totallyTimeSpent" value="50383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2778" y="70" width="1858" height="1254" extended-state="0" />
@@ -1165,14 +1102,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mvc/main/function/helper/GetRequestUrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1531,6 +1460,14 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1008#1024#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
