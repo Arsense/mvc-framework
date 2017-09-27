@@ -2,6 +2,7 @@ package mvc.controller;
 
 import mvc.main.function.helper.SuperRequestMethod;
 import mvc.other.SuperRequestMapping;
+import mvc.other.SuperResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,7 +22,8 @@ public class TestController{
         return "test1";
     }
 
-    @SuperRequestMapping(path = "test2",method = SuperRequestMethod.POST)
+    @SuperRequestMapping(path = "/test2",method = SuperRequestMethod.POST)
+    @SuperResponseBody
     public Map function2(HttpSession session, HttpServletRequest request, HttpServletResponse response, HttpSession session1, HttpServletRequest request1, HttpServletResponse response1){
         Map map=new HashMap();
         map.put("33","88");

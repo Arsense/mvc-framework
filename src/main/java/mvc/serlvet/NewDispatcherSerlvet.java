@@ -102,10 +102,13 @@ public class NewDispatcherSerlvet extends HttpServlet{
         Handler handler = handlerMapping.getHandler(requestUrl);
         for(HandlerAdapter adapter:handlerAdapters){
             if(adapter != null){
-                adapter.support(handler);
-                adapter.setHandler(handler);
+
                 try {
+                  if(adapter.support(handler));{
+                    adapter.setHandler(handler);
                     adapter.execute(tempRequest,tempResponse);
+                    break;
+                  }
                 } catch (InvocationTargetException e) {
                     e.printStackTrace();
                 } catch (IllegalAccessException e) {

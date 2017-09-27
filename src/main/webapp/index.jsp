@@ -19,7 +19,7 @@
 <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
     function fun() {
-        url="demo/test2"
+        url="/demo/test2"
         params = {
             timestamp : new Date().getTime()
         };
@@ -29,8 +29,9 @@
     }
 </script>
 <h2>Hello World!</h2>
-<input type="button" value="按钮" onclick="fun()">
+<input type="button" value="POST测试" onclick="fun()">
 <div id="divid"></div>
-<img src = "<%=contextPath%>/webapp/img/焰灵姬.jpg">
+<%--<img src = "<%=contextPath%>/img/焰灵姬.jpg">--%>
+
 </body>
 </html>
