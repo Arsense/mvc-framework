@@ -1,10 +1,11 @@
 package mvc.main.function.mapper;
 
+import mvc.main.function.handler.AjaxHandler;
 import mvc.other.SuperRequestMapping;
 import mvc.main.function.helper.SuperRequestMethod;
 import mvc.other.SuperResponseBody;
-import mvc.main.function.helper.handler.Handler;
-import mvc.main.function.helper.handler.SuperHandler;
+import mvc.main.function.handler.Handler;
+import mvc.main.function.handler.SuperHandler;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -39,9 +40,9 @@ public class HandlerMapping {
                     //shi ajax or jump
                     if(method.isAnnotationPresent(SuperResponseBody.class)){
                         //根据路径 存储method  params controller  requestmethod
-                        handlerMap.put(path1+path2,new SuperHandler(method,obj,params));
+                        handlerMap.put(path1+path2,new AjaxHandler(method,obj,params,requestMethod));
                     }else{
-                        handlerMap.put(path1+path2,new SuperHandler(method,obj,params));
+                        handlerMap.put(path1+path2,new SuperHandler(method,obj,params,requestMethod));
                     }
                 }
             }

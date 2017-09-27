@@ -2,7 +2,7 @@ package mvc.serlvet;
 
 import mvc.main.function.helper.GetRequestUrl;
 import mvc.main.function.PackageScan;
-import mvc.main.function.helper.handler.Handler;
+import mvc.main.function.handler.Handler;
 import mvc.main.function.mapper.HandlerMapping;
 import mvc.other.HandlerAdapter;
 
@@ -10,18 +10,21 @@ import mvc.other.HandlerAdapter;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by 伟 on 2017/9/21.
  */
-@WebServlet("/index")
+//@WebFilter(filterName = "Serlver1" ,urlPatterns = "/*")
+@WebServlet("/demo/test1")
 public class NewDispatcherSerlvet extends HttpServlet{
 
 
@@ -101,7 +104,13 @@ public class NewDispatcherSerlvet extends HttpServlet{
             if(adapter != null){
                 adapter.support(handler);
                 adapter.setHandler(handler);
-                adapter.execute(tempRequest,tempResponse);
+                try {
+                    adapter.execute(tempRequest,tempResponse);
+                } catch (InvocationTargetException e) {
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
             }else{
                 tempResponse.sendError(HttpServletResponse.SC_FOUND);
             }

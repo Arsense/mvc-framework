@@ -18,7 +18,7 @@ public class TestController{
 
     @SuperRequestMapping(path="/test1",method = SuperRequestMethod.GET)
     public String function1(){
-        return "test";
+        return "hello we have done";
     }
 
     @SuperRequestMapping(path = "test2",method = SuperRequestMethod.POST)

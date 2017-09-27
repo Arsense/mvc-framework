@@ -1,4 +1,6 @@
-package mvc.main.function.helper.handler;
+package mvc.main.function.handler;
+
+import mvc.main.function.helper.SuperRequestMethod;
 
 import java.lang.reflect.Method;
 
@@ -10,17 +12,24 @@ public class Handler {
     protected Object controller;
     protected Class[] params;
 
+
+    protected  SuperRequestMethod requestMethod;
     /**
      *  构造函数
      * @param method
      * @param controller
      * @param params
      */
-    public Handler(Method method,Object controller, Class[] params){
+    public Handler(Method method,Object controller, Class[] params,SuperRequestMethod requestMethod){
         this.method = method;
         this.controller =controller;
         this.params = params;
+        this.requestMethod = requestMethod;
     }
+
+
+
+
     public Method getMethod() {
         return method;
     }
@@ -43,6 +52,13 @@ public class Handler {
 
     public void setParams(Class[] params) {
         this.params = params;
+    }
+    public SuperRequestMethod getRequestMethod() {
+        return requestMethod;
+    }
+
+    public void setRequestMethod(SuperRequestMethod requestMethod) {
+        this.requestMethod = requestMethod;
     }
 
 
