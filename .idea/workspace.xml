@@ -1188,7 +1188,7 @@
       <workItem from="1506306153242" duration="16785000" />
       <workItem from="1506388684664" duration="9559000" />
       <workItem from="1506409107730" duration="9209000" />
-      <workItem from="1506474609085" duration="606000" />
+      <workItem from="1506474609085" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="update package check">
       <created>1506321749573</created>
@@ -1215,7 +1215,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59684000" />
+    <option name="totallyTimeSpent" value="60275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2554" y="230" width="2282" height="1354" extended-state="0" />
