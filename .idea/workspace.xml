@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8876ec-3958-4b07-94d9-96a7ed5d8c54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/handler/AjaxHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/handler/AjaxHandlerAdaper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mvc/other/HandlerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mvc/other/SuperRequestMapping.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mvc/other/SuperResponseBody.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/controller/TestController.class" afterPath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/controller/TestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/mapper/HandlerMapping.class" afterPath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/main/function/mapper/HandlerMapping.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/serlvet/NewDispatcherSerlvet.class" afterPath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/WEB-INF/classes/mvc/serlvet/NewDispatcherSerlvet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc/controller/TestController.class" afterPath="$PROJECT_DIR$/target/classes/mvc/controller/TestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc/main/function/mapper/HandlerMapping.class" afterPath="$PROJECT_DIR$/target/classes/mvc/main/function/mapper/HandlerMapping.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc/serlvet/NewDispatcherSerlvet.class" afterPath="$PROJECT_DIR$/target/classes/mvc/serlvet/NewDispatcherSerlvet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SpringMvcDemo_Web_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/TestController.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/TestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/mapper/HandlerMapping.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/mapper/HandlerMapping.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mvc/serlvet/NewDispatcherSerlvet.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/serlvet/NewDispatcherSerlvet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/Handler.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/handler/Handler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/SuperHandler.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/handler/SuperHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/SuperHandlerAdaper.java" afterPath="$PROJECT_DIR$/src/main/java/mvc/main/function/handler/SuperHandlerAdaper.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,7 +29,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="NewDispatcherSerlvet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewDispatcherSerlvet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mvc/serlvet/NewDispatcherSerlvet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
@@ -55,6 +37,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,16 +135,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetRequestUrl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mvc/main/function/helper/GetRequestUrl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SuperRequestMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mvc/main/function/helper/SuperRequestMethod.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -219,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/mvc/other/HandlerAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc/main/function/PackageScan.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc/main/function/helper/handler/SuperHandlerAdaper.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/mvc/main/function/handler/SuperHandlerAdaper.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc/main/function/handler/AjaxHandlerAdaper.java" />
@@ -229,6 +210,7 @@
         <option value="$PROJECT_DIR$/src/main/java/mvc/main/function/handler/AjaxHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc/serlvet/NewDispatcherSerlvet.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -281,8 +263,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2554" />
-    <option name="y" value="230" />
+    <option name="x" value="2502" />
+    <option name="y" value="76" />
     <option name="width" value="2282" />
     <option name="height" value="1354" />
   </component>
@@ -301,6 +283,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,20 +294,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SpringMvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -636,8 +606,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1189,6 +1157,7 @@
       <workItem from="1506388684664" duration="9559000" />
       <workItem from="1506409107730" duration="9209000" />
       <workItem from="1506474609085" duration="1197000" />
+      <workItem from="1506478021644" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="update package check">
       <created>1506321749573</created>
@@ -1215,10 +1184,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60275000" />
+    <option name="totallyTimeSpent" value="60322000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2554" y="230" width="2282" height="1354" extended-state="0" />
+    <frame x="2502" y="76" width="2282" height="1354" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1242,7 +1212,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2228261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22554348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1324,10 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3618#3626#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1494,13 +1460,6 @@
     <entry file="file://$PROJECT_DIR$/target/classes/mvc/main/function/helper/handler/Handler.class" />
     <entry file="file://$PROJECT_DIR$/target/classes/mvc/main/function/helper/handler/SuperHandler.class" />
     <entry file="file://$PROJECT_DIR$/target/classes/mvc/main/function/helper/handler/HandlerAdapter.class" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1513,13 +1472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1543,10 +1495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-650">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3618#3626#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1573,9 +1521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1672,6 +1617,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
