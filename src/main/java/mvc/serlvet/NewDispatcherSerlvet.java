@@ -24,7 +24,7 @@ import java.util.List;
  * Created by 伟 on 2017/9/21.
  */
 //@WebFilter(filterName = "Serlver1" ,urlPatterns = "/*")
-@WebServlet("/demo/test1")
+@WebServlet("/")
 public class NewDispatcherSerlvet extends HttpServlet{
 
 
@@ -109,6 +109,8 @@ public class NewDispatcherSerlvet extends HttpServlet{
                 } catch (InvocationTargetException e) {
                     e.printStackTrace();
                 } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }else{

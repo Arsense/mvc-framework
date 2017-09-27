@@ -30,7 +30,7 @@ public class SuperHandlerAdaper implements HandlerAdapter {
         return handler instanceof  SuperHandler;
     }
 
-    public void execute(HttpServletRequest request, HttpServletResponse response) throws InvocationTargetException, IllegalAccessException, ServletException, IOException {
+    public void execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         //所有变量放到paramsObjects
 
@@ -41,11 +41,16 @@ public class SuperHandlerAdaper implements HandlerAdapter {
         int  count = 0;
         count= makeParamsObjects(paramObjects,classes,request,response);
 
+        Object[] temp = new Object[count];
+        for(int i = 0;i<count;i++){
+            temp[i]=paramObjects[i];
+        }
+
         //掉用Dispathcher 运行所有符合请求的函数
 
         String dispatcher = null;
 
-        dispatcher = (String) method.invoke(superHandler.getController(),paramObjects);
+        dispatcher = (String) method.invoke(superHandler.getController(),temp);
 
         //转发请求 //构建Jsp路径  /WEB-INF/+dispatcher+.jsp
         request.getRequestDispatcher(PREFIX+dispatcher+SUFFIX).forward(request,response);
@@ -62,7 +67,7 @@ public class SuperHandlerAdaper implements HandlerAdapter {
      * @param response
      * @return
      */
-    public  int makeParamsObjects(Object[] paramObjects,Class[] classes,HttpServletRequest request,HttpServletResponse response){
+    public  int makeParamsObjects(Object[] paramObjects,Class[] classes,HttpServletRequest request,HttpServletResponse response) throws Exception {
         int count = 0;
         for(Class c:classes){
             if(c == HttpServletRequest.class){
@@ -71,7 +76,9 @@ public class SuperHandlerAdaper implements HandlerAdapter {
                 paramObjects[count++] = response;
             }else if(c == HttpSession.class){
                     paramObjects[count++]=request.getSession();
-            }
+            } else {
+            throw new Exception("控制器参数错误");
+        }
         }
 
         return  count;

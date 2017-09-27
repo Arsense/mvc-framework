@@ -13,6 +13,6 @@ import java.lang.reflect.InvocationTargetException;
 public interface HandlerAdapter {
 
     boolean support(Handler handler);
-    void execute(HttpServletRequest request, HttpServletResponse response) throws InvocationTargetException, IllegalAccessException, ServletException, IOException;
+    void execute(HttpServletRequest request, HttpServletResponse response) throws Exception;
     void setHandler(Handler handler);
 }
